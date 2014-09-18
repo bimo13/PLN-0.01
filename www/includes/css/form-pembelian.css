@@ -1,0 +1,56 @@
+body {
+	padding-top					: 60px;
+	padding-bottom				: 60px;
+	background-color			: #eee;
+}
+
+p {
+	margin						: 0;
+	padding						: 5px;
+}
+
+input, button, select, .input-group {
+	margin: 3px 0;
+}
+
+.container {
+	margin-bottom				: 10px		!important;
+}
+
+.input-group > input {
+	margin						: 0			!important;
+}
+
+textarea {
+   resize: none;
+}
+
+.form-group{
+	margin						: 0			!important;
+}
+
+.link-button {
+	max-width					: 100%;
+	padding						: 0;
+	margin						: 0 auto;
+}
+
+.link-button button,
+.link-button a{
+	margin						: 0			!important;
+}
+
+p.messages {
+	margin						: 10px 0 0	!important;
+	padding						: 15px		!important;
+}
+
+p.text-center {
+	padding						: 5px 0 0	!important;
+}
+
+.glyphicon-chevron-right{
+	float						: right;
+	margin-right				: 10px;
+	vertical-align				: middle;
+}

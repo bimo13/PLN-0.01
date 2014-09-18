@@ -1,0 +1,63 @@
+.form-group{
+	margin:										0 0 5px			!important;
+}
+
+.control-label{
+	margin:										0				!important;
+	padding:									0				!important;
+}
+
+.help-block{
+	font-size:									12px			!important;
+	text-indent:								5px				!important;
+}
+
+.input-group > input {
+	margin:										0				!important;
+}
+
+textarea {
+   resize:										none;
+}
+
+h4.panel-title {
+	font-size:									12px;
+}
+
+.panel {
+	margin:										0 0 10px		!important;
+}
+
+.pic-preview {
+	margin:										0 0 10px		!important;
+}
+
+.pull-left{
+	padding-left:								10px			!important;
+}
+
+.pull-right{
+	padding-right:								10px			!important;
+}
+
+table.borderless td {
+	border-top-style: none !important;
+	border-left-style: none !important;
+	border-right-style: none !important;
+	border-bottom-style: none !important;
+}
+
+table.v-mid td {
+	vertical-align: middle !important;
+}
+
+table.list-sch {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+table.list-sch td{
+	padding: 0 !important;
+	margin: 0 !important;
+	min-width: 15px !important;
+}
