@@ -58,22 +58,24 @@
 				<input type="text" class="form-control" id="counter_owner" name="counter_owner" readonly />
 			</div>
 			
-			<p class="messages bg-primary" style="margin-top:15px; margin-bottom: 15px;">Data Setoran</p>
-			<div class="form-group">
-				<label>Masukkan Jumlah Setoran</label>
-				<div class="input-group">
-					<span class="input-group-addon">Rp.</span>
-					<input type="text" class="form-control" id="jumlah_setor" name="jumlah_setor" required />
+			<form id="form-survey" autocomplete="off">
+				
+				<p class="messages bg-primary" style="margin-top:15px; margin-bottom: 15px;">Data Setoran</p>
+				<div class="form-group">
+					<label>Masukkan Jumlah Setoran</label>
+					<div class="input-group">
+						<span class="input-group-addon">Rp.</span>
+						<input type="text" class="form-control" id="jumlah_setor" name="jumlah_setor" required />
+					</div>
 				</div>
-			</div>
-			
-			<div class="form-group">
-				<form id="form-survey" autocomplete="off">
+				
+				<div class="form-group">
 					<button type="submit" class="btn btn-default btn-success" id="button_tambah_data">SIMPAN</button>
 					<button type="button" class="btn btn-warning btn-success" id="button_skip_data" onClick="skipTransaksi();">SKIP</button>
 					<input type="hidden" class="form-control" id="schedule_id" name="schedule_id" readonly />
-				</form>
-			</div>
+				</div>
+				
+			</form>
 			
 		</div>
 		
