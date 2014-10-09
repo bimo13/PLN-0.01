@@ -6,7 +6,7 @@ $.post(
 			$("#sch-wrapper").empty();
 			for(var x=0; x<data['return_data']['sch_det'].length; x++){
 				var num = x + 1;
-				$("#list-jadwal").append("<a href=\"form-survey.html?id="+data['return_data']['sch_id'][x]+"&ctr="+data['return_data']['sch_det'][x].counter_id+"\" class=\"btn btn-default btn-lg btn-block clearfix\"><table class=\"table borderless v-mid list-sch\"><tr><td rowspan=\"3\" valign=\"middle\">"+num+".</td><td align=\"left\">"+data['return_data']['sch_det'][x].counter_name+"</td><td rowspan=\"3\" valign=\"middle\"><span class=\"glyphicon glyphicon-chevron-right\"></span></td></tr><tr><td align=\"left\">"+data['return_data']['sch_det'][x].counter_addr+"</td></tr><tr><td align=\"left\">"+data['return_data']['sch_det'][x].counter_telp+"</td></tr></table></a>");
+				$("#list-jadwal").append("<a href=\"form-survey.html?id="+data['return_data']['sch_id'][x]+"&ctr="+data['return_data']['sch_det'][x].counter_id+"&bills="+data['return_data']['sch_bil'][x]+"\" class=\"btn btn-default btn-lg btn-block clearfix\"><table class=\"table borderless v-mid list-sch\"><tr><td rowspan=\"3\" valign=\"middle\">"+num+".</td><td align=\"left\">"+data['return_data']['sch_det'][x].counter_name+"</td><td rowspan=\"3\" valign=\"middle\"><span class=\"glyphicon glyphicon-chevron-right\"></span></td></tr><tr><td align=\"left\">"+data['return_data']['sch_det'][x].counter_addr+"</td></tr><tr><td align=\"left\">"+data['return_data']['sch_det'][x].counter_telp+"</td></tr></table></a>");
 			}
 			$("#pleasewait").modal("hide");
 		}else{

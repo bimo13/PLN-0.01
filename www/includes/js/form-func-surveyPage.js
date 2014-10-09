@@ -1,5 +1,6 @@
 var id				=	GetURLParameter("ctr");
 var sch				=	GetURLParameter("id");
+var bil				=	GetURLParameter("bills");
 
 $("#schedule_id").val(sch);
 
@@ -43,6 +44,7 @@ $.post(
 			$("#counter_addr").val(data['return_data']['counter_addr']);
 			$("#counter_telp").val(data['return_data']['counter_telp']);
 			$("#counter_owner").val(data['return_data']['counter_owner']);
+			$("#counter_bills").val(bil);
 			
 		}
 	},

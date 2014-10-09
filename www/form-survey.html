@@ -62,11 +62,24 @@
 				
 				<p class="messages bg-primary" style="margin-top:15px; margin-bottom: 15px;">Data Setoran</p>
 				<div class="form-group">
+					<label>Jumlah Tagihan</label>
+					<div class="input-group">
+						<span class="input-group-addon">Rp.</span>
+						<input type="text" class="form-control" id="counter_bills" name="counter_bills" readonly />
+					</div>
+				</div>
+				
+				<div class="form-group">
 					<label>Masukkan Jumlah Setoran</label>
 					<div class="input-group">
 						<span class="input-group-addon">Rp.</span>
 						<input type="text" class="form-control" id="jumlah_setor" name="jumlah_setor" required />
 					</div>
+				</div>
+				
+				<div class="form-group">
+					<label>Catatan</label>
+					<textarea class="form-control" id="sch_note" name="sch_note"></textarea>
 				</div>
 				
 				<div class="form-group">
@@ -166,6 +179,7 @@
 				
 				var	schedule_id		=	$("#schedule_id").val();
 				var jumlah_setor	=	$("#jumlah_setor").val();
+				var catatan			=	$("#sch_note").val();
 				var stts			=	1;
 				
 				if(schedule_id != "" && jumlah_setor != ""){
@@ -176,6 +190,7 @@
 						{
 							schedule_id		:	schedule_id,
 							jumlah_setor	:	jumlah_setor,
+							catatan			:	catatan,
 							stts			:	stts
 						},
 						function(data){
